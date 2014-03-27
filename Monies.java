@@ -1,7 +1,6 @@
 
 // *********************************
-// Programming Homework 1.
-// 2. Monies
+// Monies
 // written by Nina B.
 //
 // prints the message converts double value fewest number of bills and coins

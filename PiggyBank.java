@@ -1,5 +1,5 @@
 // *********************************
-// Programming Homework 1.
+// Piggy Bank
 // written by Nina B.
 //
 // prints the message converts coin to total value
