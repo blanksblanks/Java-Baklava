@@ -3,7 +3,7 @@
 // Monies
 // written by Nina B.
 //
-// prints the message converts double value fewest number of bills and coins
+// convert the value to fewest number of bills and coins
 // *********************************
 
 import java.util.Scanner;

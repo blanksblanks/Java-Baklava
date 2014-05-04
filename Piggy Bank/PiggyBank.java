@@ -2,7 +2,7 @@
 // Piggy Bank
 // written by Nina B.
 //
-// prints the message converts coin to total value
+// converts coin to total value
 // *********************************
 
 import java.util.Scanner;
