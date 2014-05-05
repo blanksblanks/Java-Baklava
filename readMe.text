@@ -1,0 +1,39 @@
+READ ME
+
+HOW TO RUN THE GAME OF LIFE
+
+  1. Compile the files using the following commands:
+     	javac Cell.java
+	javac Board.java
+	javac Game.java
+	javac GameTest.java
+  2. Run the Test file:
+	java Test
+  3. Follow the instructions in the program. It's fairly straightforward.
+
+HOW I WROTE THE PROGRAM
+
+First, I had to understand the rules of the game. Basically, it was a board with dimensions determined by the user, which contained cells that were either X to show they were alive, or O to show they were dead. There were about 4 transitions the cells could undergo as far as I could see:
+
+alive --> dead (if 2>neighbors<3, either from loneliness or overcrowding)
+alive --> alive (neighbors=2 or =3, survival)
+dead --> alive (neighbors=3)
+dead --> dead (stasis)
+
+Next, I had to determine what classes I was going to write and how they would function and interact in the program. It was determined that the 4 classes would be: Cell, Board, Game, GameTest. I will proceed to describe the purpose and methods of each class, and why I designed them the way I did.
+
+Cell Class:
+
+This was a fairly simple class. Using the user input from the Test class, I converted the rows and columns into x- and y-coordinates so that it would be easier to visualize the cells as a matrix of dead and living cells.
+
+Board Class:
+
+This was a rather difficult class to write. The main purpose of this class was to create a versatile board that could be stored as either a 2d array or and array list. The merits of a 2d array are that the individual cells can be compared to each other to see how many neighboring cells there are and thus determining whether the cell is alive or dead. The merits of an array list were that they could change size much more easily. So initially I stored the user input in an array list, with a size determined by the difference between the maximum and minimum points in order to ensure that it was the right size with a border of empty cells. Then I converted it to a 2D array so that I could count the neighboring cells to determine the cells in the next generation. Then I converted it back to an array list to print it out, and made sure all the values returned each other. For the array values, I chose integers because adding up the numbers of neighbors was easiest with this, compared to string and booleans.
+
+Game Class:
+
+This was the class that ran the methods of looking for neighbors in the board and changing the positions of the live cells. It also ran the method a few times depending on how many generations later the user wanted to see the board. I also had a String output to visually return the board from the board class.
+
+GameTest Class:
+
+This class was basically user input that would be carried over and implemented in the other classes. It was basically printing statements to lead the user to input the right answers. Some precautions were taken to limit users from putting in incorrect input that would lead to an error and an early unwanted termination of the program.
