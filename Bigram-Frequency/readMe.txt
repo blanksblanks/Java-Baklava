@@ -14,9 +14,8 @@ HOW TO RUN THE BIGRAM TEST
 	*Note: you can call input whatever you want, and you can either write
 	whatever you want or copy and paste the text from another place
   3. Run the Test file:
-	java Test (input.txt)
-	*Note: the input file can be called anything, just make sure it's correct
-	and an existing file
+	java Test
+	*When the program asks for a file to read, give it the path to any existing .txt file
 
 HOW I WROTE THE PROGRAM
 
@@ -33,8 +32,8 @@ Test Class:
 This class basically just read a command-line input text file and copied all the text,
 without changing any information or the format, into a file called "inputfile.txt"
 which can be referred to later. After that it implemented the constructor methods from
-other classes to create different output files.  It also caught exceptions if the user typed the
-wrong input.
+other classes to create different output files.  It also caught exceptions if the user 
+typed the wrong input.
 
 
 UnsortedList Class:
