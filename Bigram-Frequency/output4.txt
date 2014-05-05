@@ -1,0 +1,2 @@
+Occurrences: 	17	13	11	9	8	8	7	6	6	6	
+Bigrams: 	th	he	in	re	ou	nd	te	se	on	er	
