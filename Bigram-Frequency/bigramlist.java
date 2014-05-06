@@ -50,13 +50,18 @@ public class bigramlist {
 				
 			}
 			output.close();
-			//File inFileTwo = new File("bigramlist.txt");
-			//Scanner inputTwo = new Scanner(inFileTwo);
-			//while (inputTwo.hasNext()){
-			//System.out.println(inputTwo.next());}
-			}
+			
+            // Prints out bigramlist.txt
+            // File inFileTwo = new File("bigramlist.txt");
+			// Scanner inputTwo = new Scanner(inFileTwo);
+				// while (inputTwo.hasNext()){
+				// System.out.println(inputTwo.next());
+				// }
+            
+            }
+        
 		catch (Exception e){
-			System.out.println("FAIL");
+			System.out.println("FAIL.");
 		}
 	}
 }

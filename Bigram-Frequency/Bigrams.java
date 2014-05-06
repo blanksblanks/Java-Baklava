@@ -16,7 +16,7 @@ public class Bigrams {
 			int largestNumber = 0;
 			int currentNumber = 1;
 
-//			for (int i=0; i>=10; i++) {
+			// for (int i=0; i>=10; i++) {
 			String one = input.nextLine();
 			while (input.hasNext()){
 				String two = input.nextLine();
@@ -34,18 +34,18 @@ public class Bigrams {
 				}
 				//output.print("\n '" + largest + "' occurs " + largestNumber + " times.");
 			}
-		//	}
-//			output.print("The most commonly occurring bigram is '" + largest + "', and it occurs " + largestNumber + " times in the text.");
+		    
+			// output.print("The most commonly occurring bigram is '" + largest + "', and it occurs " + largestNumber + " times in the text.");
 			
-			System.out.println("Made output3.txt which has the top ten occurring bigrams.");
-			System.out.println("...");
+			System.out.println("Made output3.txt, which has the top ten occurring bigrams.\n...");
+			// System.out.println("...");
 			output.close();
-			File inFileTwo = new File("output3.txt");
-			Scanner inputTwo = new Scanner(inFileTwo);
-			while (inputTwo.hasNext()){
-				System.out.println(inputTwo.nextLine());
-			}
-						//"Made outputfinal.txt which has the top ten occurring bigrams and number of occurrences.");
+			// File inFileTwo = new File("output3.txt");
+			// Scanner inputTwo = new Scanner(inFileTwo);
+			//while (inputTwo.hasNext()){
+			//	System.out.println(inputTwo.nextLine());
+			// }
+					
 		}
 		
 		catch(Exception e){

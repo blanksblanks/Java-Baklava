@@ -41,7 +41,7 @@ public class SortedList {
 			}
 			
 			output.close();
-			System.out.println("Made output2.txt which has all the bigrams sorted in alphabetical order.");			
+			System.out.println("Made output2.txt, which has all the bigrams sorted alphabetically.\n...");			
 			
 			//File inFileThree = new File("output2.txt");
 			//Scanner inputTwo = new Scanner(inFileThree);
@@ -49,7 +49,7 @@ public class SortedList {
 			//System.out.println(inputTwo.next());}
 		}
 		catch(Exception e){
-			System.out.println("Something messed up.  Please try again.");
+			System.out.println("Something messed up. Please try again.");
 			System.out.println(e);
 		}
 	}
