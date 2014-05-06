@@ -10,7 +10,7 @@
 INTRODUCTION
 =========================================================
 
-"Bigrams" are groups of two written letters (or sometimes two syllables, or two words), and are very commonly used as the basis for simple statistical analysis of text. They are also used in many of the most successful language models for speech recognition. The most common bigrams in written English are "th", "er", "on", "an", and "re".This Bigram Frequency Test program looks through a text file and reports the ten most common bigrams (two-­letter sequences) in the text, along with the number of occurrences. For our purposes, bigrams do no span across words and we can assume the text file is all lower case letters with no punctuation. The name of the text file will be provided by the user when the program runs, and the final output will be a text file with the ten most common bigrams and the number of occurrences, in sorted order.
+"Bigrams" are groups of two written letters (or sometimes two syllables, or two words), and are very commonly used as the basis for simple statistical analysis of text. They are also used in many of the most successful language models for speech recognition. The most common bigrams in written English are "th", "er", "on", "an", and "re".The Bigram Frequency Test program looks through a text file and reports the ten most common bigrams (two-­letter sequences) in the text, along with the number of occurrences. For our purposes, bigrams do no span across words and we can assume the text file is all lower case letters with no punctuation. The name of the text file will be provided by the user when the program runs, and the final output will be a text file with the ten most common bigrams and the number of occurrences, in sorted order.
 
 =========================================================
 HOW TO RUN THE BIGRAM FREQUENCY TEST
@@ -26,9 +26,16 @@ HOW TO RUN THE BIGRAM FREQUENCY TEST
 	$ pico input.txt
 	* You can use or edit the “input.txt” file provided.
 	* If you want to create your own text file, you can call it whatever you want and 	work with pico or any text editor of your choice.
-  3. Run the Test file:
+  3. Run the main method:
 	$ java Test
 	* When the program asks you for a file to read, give it the name of the text file 	if it is in the same paragraph or the program, or give the path to the text file 	you want to run through the Bigram Frequency Test.
+  4. See the output files in Terminal:
+	$ cat output4.txt [final output of 10 most common bigrams]
+	$ cat output.txt [all the bigrams in the file, unsorted]
+	$ cat output2.txt [all the bigrams in the file, sorted]
+	$ cat output3.txt [all the bigrams in the file, with number occurrences]
+	* Don’t type what’s in the square brackets
+	* If you are using Windows, replace “cat” with “type”
 
 =========================================================
 PROLOGUE: CHALLENGES WRITING THE PROGRAM
