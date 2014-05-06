@@ -16,7 +16,7 @@ public class UnsortedList {
 			String word;
 			while(input.hasNext())
 			{
-				word=input.next();
+				word = input.next();
 			    char[] stringArray;
 			    stringArray = word.toCharArray();
 			    for(int i=0; i < (stringArray.length-1); i++){ // stops at the second last element of array
