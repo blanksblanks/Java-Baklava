@@ -1,3 +1,9 @@
+/*****************************
+	Bigram Frequency Test
+	By: Nina Baculinao
+	nb2406
+*****************************/
+
 import java.io.*;
 import java.util.Scanner;
 

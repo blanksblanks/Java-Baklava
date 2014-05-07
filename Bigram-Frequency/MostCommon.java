@@ -1,3 +1,7 @@
+/*****************************
+	Most Common Class
+*****************************/
+
 import java.util.Scanner;
 import java.io.*;
 
