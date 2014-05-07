@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-public class GameTest
+
+public class GameOfLife
 {
 	public static void main(String[]args)
 	{
