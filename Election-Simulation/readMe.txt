@@ -1,6 +1,14 @@
-READ ME
+######                         #         #
+#     #   ######   ##   ####   ##       ## ######
+#     #   #       #  #  #   #  # #     # # #
+######    #####  #    # #    # #  #   #  # #####
+#     #   #      ###### #    # #   # #   # #
+#      #  #      #    # #   #  #    #    # #
+#      #  ###### #    # ####   #         # ######
 
+=========================================================
 HOW TO RUN THE ELECTION SIMULATION
+=========================================================
 
   1. Compile the files using the following commands:
      	javac Voter.java
@@ -11,7 +19,9 @@ HOW TO RUN THE ELECTION SIMULATION
 	java Test
   3. Watch the simulation take place.
 
+=========================================================
 HOW I WROTE THE PROGRAM
+=========================================================
 
   First I made a rough outline of what was going into my classes to make the elections simulation.
   

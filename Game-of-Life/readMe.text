@@ -1,6 +1,14 @@
-READ ME
+######                         #         #
+#     #   ######   ##   ####   ##       ## ######
+#     #   #       #  #  #   #  # #     # # #
+######    #####  #    # #    # #  #   #  # #####
+#     #   #      ###### #    # #   # #   # #
+#      #  #      #    # #   #  #    #    # #
+#      #  ###### #    # ####   #         # ######
 
+=========================================================
 HOW TO RUN THE GAME OF LIFE
+=========================================================
 
   1. Compile the files using the following commands:
      	javac Cell.java
@@ -11,7 +19,9 @@ HOW TO RUN THE GAME OF LIFE
 	java Test
   3. Follow the instructions in the program. It's fairly straightforward.
 
+=========================================================
 HOW I WROTE THE PROGRAM
+=========================================================
 
 First, I had to understand the rules of the game. Basically, it was a board with dimensions determined by the user, which contained cells that were either X to show they were alive, or O to show they were dead. There were about 4 transitions the cells could undergo as far as I could see:
 

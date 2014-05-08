@@ -1,16 +1,26 @@
-READ ME
+######                         #         #
+#     #   ######   ##   ####   ##       ## ######
+#     #   #       #  #  #   #  # #     # # #
+######    #####  #    # #    # #  #   #  # #####
+#     #   #      ###### #    # #   # #   # #
+#      #  #      #    # #   #  #    #    # #
+#      #  ###### #    # ####   #         # ######
 
+=========================================================
 HOW TO RUN THE GAME
+=========================================================
 
   1. Compile the files using the following commands:
-     	javac Game.java
 	javac GameTest.java
+     	javac Game.java
 	javac Player.java
   2. Run the GameTest file:
 	java GameTest
   3. Play the game according to the instructions. 
 
+=========================================================
 RULES OF THE GAME
+=========================================================
 
   The rules of the game should show up when the game starts, but basically it works
   like this: Two players simultaneously declare "one" or "two". Player 1 wins if
@@ -18,14 +28,11 @@ RULES OF THE GAME
   case the loser in obliged to pay the winner in dollars the sum of the two 
   declared numbers.
 
+=========================================================
 HOW I WROTE THE GAME
+=========================================================
 
-  In the programming assignment prompt, there were a number of requirements. So
-  I'll describe how I designed the code to satisfy all the conditions. I
-  numbered off the requirements so every time one comes up in my explanation
-  I'll number it.
-
-  Test class:
+  GameTest class:
   I started by creating a public test class that I called GameTest. I included
   some start-up text to pop up with the beginning of the game, which included 
   the rules of the game. I set up instanciation of a new game that would link
