@@ -4,9 +4,13 @@
 //  Created by Nina Baculinao on 9/5/14.
 //
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import javax.swing.JPanel;
 import javax.swing.JComponent;
 
 // To display a drawing in a frame, need to define a class that inherits and 
@@ -30,6 +34,42 @@ public class RectangleComponent extends JComponent {
 
 		// Draw moved rectangle
 		g2.draw(box);
+
+		// Draw the head
+		// Double is an inner class in Ellipse2D, there's also float
+		// but double is more convenient to use in Java
+		// Syntax: new Ellipse2D.Double(x, y, diameter, diameter);
+		Ellipse2D.Double head = new Ellipse2D.Double(5, 10, 100, 150);
+		Color mint = new Color(162, 255, 204);
+		g2.setColor(mint);
+		g2.fill(head);
+		g2.draw(head);
+
+		// Draw the eyes
+		// Syntax: new Line2D.Double(x1, y1, x2, y2)
+		// can also set Point2D.Double from =  new Point2D.Double(x1, x2);
+		g2.setColor(Color.BLACK);
+
+		Line2D.Double lefteye1 = new Line2D.Double (25, 80, 35, 70);
+		g2.draw(lefteye1);
+
+		Line2D.Double lefteye2 = new Line2D.Double (35, 70, 45, 80);
+		g2.draw(lefteye2);
+
+		Line2D.Double righteye1 = new Line2D.Double (65, 80, 75, 70);
+		g2.draw(righteye1);
+
+		Line2D.Double righteye2 = new Line2D.Double (75, 70, 85, 80);
+		g2.draw(righteye2);
+
+		// Draw the mouth
+		Rectangle mouth = new Rectangle(30, 130, 50, 5);
+		g2.setColor(Color.PINK);
+		g2.fill(mouth);
+
+		// Draw the greeting
+		g2.setColor(Color.BLUE);
+		g2.drawString("Hello, World!", 5, 175);
 
 	}
 }
