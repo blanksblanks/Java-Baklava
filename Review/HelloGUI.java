@@ -15,8 +15,11 @@ public class HelloGUI {
 		JFrame frame = new JFrame();
 
 		frame.setSize(300,400);
-		frame.setTitle("An Empty Frame for now");
+		frame.setTitle("A Pretty Empty Frame (for now)");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		RectangleComponent component = new RectangleComponent();
+		frame.add(component);
 
 		frame.setVisible(true);
 
