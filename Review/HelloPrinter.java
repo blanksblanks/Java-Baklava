@@ -31,7 +31,8 @@ Methods and parameters:
 - Parameters are inputs to method calls
 - E.g. System.out.println("Hello, World");
 - The implicit parameter is the object on which the method is invoked and appears before the method with dot syntax, e.g. System.out.
-- The explicit parameter is inside the parenthes ("Hello, World")
+- The explicit parameter is inside the parentheses ("Hello, World")
+- The return value is a value the method returns and can be assigned to a variable, e.g. length = greetings.length(), also note print has no return value
 */
 
 public class HelloPrinter {
@@ -40,9 +41,14 @@ public class HelloPrinter {
 		// Display a greeting in the console window
 		System.out.println("Hello, World!");
 
+		// Declare an int value and initialize it with a String method call
 		String greeting = "Ni hao ma, shi jie!";
-		int length = greeting.length();
+		int length;
+		length = greeting.length();
 		System.out.println("'" + greeting + "' has " + length + " characters");
+
+		String newGreeting = greeting.replace("Ni hao ma", "Hola");
+		System.out.println(newGreeting);
 
 	}
 }
