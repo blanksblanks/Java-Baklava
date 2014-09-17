@@ -4,6 +4,49 @@
 //  Created by Nina Baculinao on 9/5/14.
 //
 
+// Import Abstract Windowing Toolkit package, which contains Rectangle class
+// System and String classes are in java.lang package, which is auto imported
+// Syntax: import packageName.className;
+import java.awt.Rectangle;
+
+public class HelloPrinter {
+	public static void main(String[] args) {
+
+		// Display a greeting in the console window
+		System.out.println("Hello, World!");
+
+		// Declare an int value and initialize it with a String method call
+		// Syntax: typeName variableName = value;
+		String greeting = "Ni hao ma, shi jie!";
+		int length = greeting.length();
+		System.out.println("'" + greeting + "' has " + length + " characters");
+
+		// Call String method with one implicit parameter, two explicit parameters, and a return value
+		String newGreeting = greeting.replace("Ni hao ma", "Hola");
+		System.out.println(newGreeting);
+
+		// Construct new object, a rectangle with x, y, width and height values
+		// Syntax: new ClassName(parameters);
+		Rectangle box = new Rectangle(5, 10, 20, 30);
+
+		// Print information about the new rectangle with accessor get methods
+		System.out.println("New rectangle with x: " + box.getX() + ", y: " + box.getY() + ", width: " + box.getWidth() + " and height: " + box.getHeight());
+
+		// Move the triangle with mutator method translate
+		// No assignment because return type is void but implicit param changes
+		box.translate(15, 25);
+
+		// Print information about the moved rectangle
+		// Good way to test is to create tester class with main method, display results of method calls and display expected values
+		System.out.println("Moved x: " + box.getX());
+		System.out.println("Expected: 20");
+
+		System.out.println("Moved y: " + box.getY());
+		System.out.println("Expected: 35");
+
+	}
+}
+
 /* ---------------------------------------------------------
 
 COMMENTS:
@@ -97,49 +140,3 @@ Object References:
   - Not "the object box" but "the object reference stored in box"
 
 ------------------------------------------------------------ */
-
-
-
-
-// Import Abstract Windowing Toolkit package, which contains Rectangle class
-// System and String classes are in java.lang package, which is auto imported
-// Syntax: import packageName.className;
-import java.awt.Rectangle;
-
-public class HelloPrinter {
-	public static void main(String[] args) {
-
-		// Display a greeting in the console window
-		System.out.println("Hello, World!");
-
-		// Declare an int value and initialize it with a String method call
-		// Syntax: typeName variableName = value;
-		String greeting = "Ni hao ma, shi jie!";
-		int length = greeting.length();
-		System.out.println("'" + greeting + "' has " + length + " characters");
-
-		// Call String method with one implicit parameter, two explicit parameters, and a return value
-		String newGreeting = greeting.replace("Ni hao ma", "Hola");
-		System.out.println(newGreeting);
-
-		// Construct new object, a rectangle with x, y, width and height values
-		// Syntax: new ClassName(parameters);
-		Rectangle box = new Rectangle(5, 10, 20, 30);
-
-		// Print information about the new rectangle with accessor get methods
-		System.out.println("New rectangle with x: " + box.getX() + ", y: " + box.getY() + ", width: " + box.getWidth() + " and height: " + box.getHeight());
-
-		// Move the triangle with mutator method translate
-		// No assignment because return type is void but implicit param changes
-		box.translate(15, 25);
-
-		// Print information about the moved rectangle
-		// Good way to test is to create tester class with main method, display results of method calls and display expected values
-		System.out.println("Moved x: " + box.getX());
-		System.out.println("Expected: 20");
-
-		System.out.println("Moved y: " + box.getY());
-		System.out.println("Expected: 35");
-
-	}
-}
