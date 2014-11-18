@@ -21,10 +21,6 @@ public class HelloGUI {
 		RectangleComponent component = new RectangleComponent();
 		frame.add(component);
 
-		JButton changeButton = new JButton("Change");
-	    goodbyeButton.addActionListener(new GreetingListener("change"));
-	    frame.add(changeButton);
-
 		frame.setVisible(true);
 
 	}

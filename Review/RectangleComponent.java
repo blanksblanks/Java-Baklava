@@ -17,13 +17,7 @@ import java.util.Random;
 
 // To display a drawing in a frame, need to define a class that inherits and 
 // extends JComponent class
-public class RectangleComponent extends JComponent implements ActionListener {
-
-	private String s;
-	private Ellipse2D.Double head;
-	private Graphics2D g2;
-	private Color mint;
-	private Color random;
+public class RectangleComponent extends JComponent {
 	
 	// Drawing instructions go inside this class
 	// This method is called whenever the component needs to be repainted
@@ -31,7 +25,7 @@ public class RectangleComponent extends JComponent implements ActionListener {
 	public void paintComponent(Graphics g) {
 
 		// Use a cast to receover the Graphics2D object from the Graphics param
-		g2 = (Graphics2D) g;
+		Graphics2D g2 = (Graphics2D) g;
 
 		// Construct a rectangle and draw it
 		Rectangle box = new Rectangle(5, 10, 20, 30);
@@ -47,9 +41,9 @@ public class RectangleComponent extends JComponent implements ActionListener {
 		// Double is an inner class in Ellipse2D, there's also float
 		// but double is more convenient to use in Java
 		// Syntax: new Ellipse2D.Double(x, y, diameter, diameter);
-		head = new Ellipse2D.Double(5, 10, 100, 150);
-		mint = new Color(162, 255, 204);
-		random = generateRandomColor(mint); // white is color to be mixed with
+		Ellipse2D.Double head = new Ellipse2D.Double(5, 10, 100, 150);
+		Color mint = new Color(162, 255, 204);
+		Color random = generateRandomColor(mint); // white is color to be mixed with
 		g2.setColor(random);
 		g2.fill(head);
 		g2.draw(head);
@@ -80,20 +74,6 @@ public class RectangleComponent extends JComponent implements ActionListener {
 		g2.setColor(Color.BLUE);
 		g2.drawString("Hello, World!", 5, 175);
 
-	}
-
-	public GreetingListener(String st) {
-	s = st;
-    }
-
-    public void actionPerformed(ActionEvent ae) {
-    if (ae.getActionCommand().equals("change")) {
-	    random = generateRandomColor(mint);
-	    g2.setColor(random);
-		g2.fill(head);
-		g2.draw(head);
-		System.out.println("button got pressed");
-	}
 	}
 
 	public Color generateRandomColor(Color mix) {
